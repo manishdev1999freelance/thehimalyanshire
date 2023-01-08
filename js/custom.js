@@ -658,8 +658,14 @@ $(document).ready(function () {
     $("#footerSection").load('common/footer.html');
     $("#aboutSection").load('common/aboutcontent.html');
     $("#roomsSection").load('common/rooms.html');
-    console.log($("#roomsSection"))
-    
+
+    var facilities = ["Power backup", "Electric heaters as well as electric blankets provided", "24/7 hot water", "In-house kitchen serving from 9am-9pm", "Barbeque and bon fire available on order", "Outdoor seating area with lawn", "An entire floor dedicated to recreational activities and chilling", "Pool Table, TT Table, TV viewing lounge", "Hi speed wifi", "Free private parking", "First aid box", "Guided hiking tours", "Picnic Lunch", "Karaoke nights"]
+    generated_facilities = ""
+    $.each(facilities, function (i, obj) {
+        generated_facilities = generated_facilities + '<div class="col-md-4" style="display: flex; align-items: center;padding-bottom:25px"> <div class="page-list-icon"> <span class="ti-check"></span> </div><div class="page-list-text"> <p>' + obj + '</p></div></div>'
+    });
+    $("#generatedFacilities").append(generated_facilities);
+
 });
 
 

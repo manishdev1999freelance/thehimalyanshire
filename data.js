@@ -1,4 +1,4 @@
 export class jsonData {
    
-    static var = ""
+     roomDetails = [{"roomName":"Deodar","roomDetails":"Deo means God and Dar means a tree, in other words; the celestial tree or the tree of the gods, which only makes it befitting that we name our most premium room after this magnificent tree. A very spacious room with cool things like bay windows for you to sit and soak the winter sun while enjoying the view of the snow-capped mountains, an electric fireplace, and a very spacious and modern washroom make this a truly luxurious room to stay in.","checkIn":"2pm","checkOut":"11am","otherPoints":["Room only Price- Rs. 7500  per night (excluding taxes) for double occupancy","Children upto the age of 12 years are free if no extra bedding is required.","Extra bed charges- Rs. 1000 per person Max occupancy- 4 adults"]}]
 }

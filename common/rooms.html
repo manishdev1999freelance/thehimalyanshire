@@ -1,0 +1,23 @@
+<script>
+     $(document).ready(function () {
+         var roomDetails = [{ "displayName": "Deodar", "roomName": "Deodar", "roomDetails": "Deo means God and Dar means a tree, in other words; the celestial tree or the tree of the gods, which only makes it befitting that we name our most premium room after this magnificent tree. A very spacious room with cool things like bay windows for you to sit and soak the winter sun while enjoying the view of the snow-capped mountains, an electric fireplace, and a very spacious and modern washroom make this a truly luxurious room to stay in.", "checkIn": "2pm", "checkOut": "11am", "otherPoints": ["Room only Price- Rs. 7500  per night (excluding taxes) for double occupancy", "Children upto the age of 12 years are free if no extra bedding is required.", "Extra bed charges- Rs. 1000 per person Max occupancy- 4 adults"] }, { "displayName": "Buransh", "roomName": "Buransh", "roomDetails": "One of our most premium rooms, with wide bay windows to enjoy the uninterrupted views of the Himalayan range. A room big enough to have two king size beds, a three seater sofa, an electric firepl ", "checkIn": "2pm", "checkOut": "11am", "otherPoints": ["Room only Price- Rs. 7500  per night (excluding taxes) for double occupancy", "Children upto the age of 12 years are free if no extra bedding is required.", "Extra bed charges- Rs. 1000 per person Max occupancy- 4 adults"] }, { "displayName": "Blue Pine", "roomName": "bluepine", "roomDetails": "Named after the most pre-dominant pine species found around our property, Blue Pine is a premium room with a valley-view.", "checkIn": "2pm", "checkOut": "11am", "otherPoints": ["Room only Price- Rs. 7500  per night (excluding taxes) for double occupancy", "Children upto the age of 12 years are free if no extra bedding is required.", "Extra bed charges- Rs. 1000 per person Max occupancy- 4 adults"] }]
+         var rooms = ""
+         $.each(roomDetails, function (i, obj) {
+             rooms = rooms + '<div class="col-md-4"><div class="item"> <div class="position-re o-hidden"> <img src="img/rooms/1.jpg" alt=""> </div><div class="con"> <h5><a href="room-details.html">' + obj.displayName + '</a> </h5> <div class="line"></div><div class="row facilities"> <div class="col col-md-7"> <ul> <li><i class="flaticon-bed"></i></li><li><i class="flaticon-bath"></i></li><li><i class="flaticon-breakfast"></i></li><li><i class="flaticon-towel"></i></li></ul> </div><div class="col col-md-5 text-right"> <div class="permalink"><a href="room-details.html?roomName=' +  obj.roomName + '">Details <i class="ti-arrow-right"></i></a></div></div></div></div></div></div>'
+         });
+            $("#listRoomSection").append(rooms);
+
+        });
+</script>
+
+<section class="rooms1 section-padding bg-cream" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-subtitle">The Himalayan Shire</div>
+                <div class="section-title">Rooms & Suites</div>
+            </div>
+        </div>
+        <div class="row" id="listRoomSection"></div>
+    </div>
+</section>

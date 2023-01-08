@@ -70,6 +70,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
@@ -822,7 +823,7 @@ color: #FEBF4E;
     line-height: 1.25em;
 }
 .section-title span {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 /* ======= Navbar style ======= */
@@ -2395,7 +2396,7 @@ color: #FEBF4E;
 .rooms2 .caption h3,
 .rooms2 .caption h3 a {
     font-size: 24px;
-    color: #ab8a62;
+    color: #febf4e;
     margin-bottom: 0px;
 }
 .rooms2 .caption h3 span {
@@ -2447,7 +2448,7 @@ color: #FEBF4E;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     background: transparent;
-    border: 1px solid #ab8a62;
+    border: 1px solid #febf4e;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3px 12px;
@@ -3696,6 +3697,48 @@ button.mfp-arrow {
     color: #222 !important;
 }
 
+.input2_inner {
+    position: relative;
+    position: relative;
+}
+
+.input2_inner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    pointer-events: none;
+    content: "";
+    font-family: "themify";
+    font-size: 15px;
+    color: #FEBF4E;
+    line-height: 1;
+}
+
+.input2_inner input {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    color: #222;
+    padding: 20px 40px 20px 20px;
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.input2_inner input::placeholder {
+    font-size: 15px;
+    color: #222 !important;
+}
+
+.input2_inner input:focus {
+    outline: none;
+    box-shadow: none;
+    background: #fff;
+    color: #222 !important;
+}
 
 .select1_wrapper {
     margin-bottom: 0;
@@ -4568,7 +4611,7 @@ button.mfp-arrow {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    background: #ab8a62;
+    background: #febf4e;
     color: #fff;
     padding: 13px 22px;
     margin: 0;
@@ -5047,7 +5090,7 @@ select {
 .progress-wrap {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     height: 45px;
     width: 45px;
     cursor: pointer;

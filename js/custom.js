@@ -652,3 +652,11 @@ var form = $('.contact__form'),
         }
     });
     
+// Executes On Page Load
+$(document).ready(function () {
+    $("#navbarSection").load('common/navbar.html');
+    $("#footerSection").load('common/footer.html');
+    $("#aboutcontentSection").load('common/aboutcontent.html');
+});
+
+
